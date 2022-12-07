@@ -1,0 +1,3 @@
+openssl x509 -in [[file-path]]\[[cert-name]].crt -out [[file-path]]\[[cert-name]].pem -outform PEM
+openssl x509 -in [[file-path]]\[[cert-name]].server-ca.crt -out [[file-path]]\[[cert-name]].server-ca.pem -outform PEM
+openssl rsa -in [[file-path]]\[[cert-name]].key -text > [[file-path]]\[[cert-name]].key.pem
