@@ -1,4 +1,4 @@
-openssl pkcs12 -in [[file-path]]\[[cert-name]]pfx -nocerts -nodes -out [[file-path]]\[[cert-name]]key
-openssl rsa -in [[file-path]]\[[cert-name]]key -out [[file-path]]\[[cert-name]]server.key
-openssl pkcs12 -in [[file-path]]\[[cert-name]]pfx -clcerts -nokeys -out [[file-path]]\[[cert-name]]crt
-openssl pkcs12 -in [[file-path]]\[[cert-name]]pfx -cacerts -nokeys -out [[file-path]]\[[cert-name]]server-ca.crt
+openssl pkcs12 -in [[file-path]]\[[cert-name]].pfx -nocerts -nodes -out [[file-path]]\[[cert-name]].key
+openssl rsa -in [[file-path]]\[[cert-name]].key -out [[file-path]]\[[cert-name]]server.key
+openssl pkcs12 -in [[file-path]]\[[cert-name]].pfx -clcerts -nokeys -out [[file-path]]\[[cert-name]].crt
+openssl pkcs12 -in [[file-path]]\[[cert-name]].pfx -cacerts -nokeys -out [[file-path]]\[[cert-name]].server-ca.crt
